@@ -1,2 +1,1 @@
-# Welcome to,
-## Repair Guruji
+# Welcome to, Repair Guruji project

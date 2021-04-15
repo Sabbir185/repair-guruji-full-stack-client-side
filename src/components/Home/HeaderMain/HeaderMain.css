@@ -1,0 +1,26 @@
+.header-container{
+    background-image: url('../../../images/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+}
+
+.sub-container{
+    background-color: rgb(219, 216, 216);
+    margin-top: 6%;
+    box-shadow: 10px 10px 40px lightgray;
+    padding: 5% 20%;
+    opacity: .9;
+    border-right: 4px solid rgb(238, 9, 116);
+    border-left: 4px solid rgb(238, 9, 116);
+}
+
+.welcome{
+    color: rgb(7, 161, 20);
+    font-weight: 700;
+}
+.title{
+    color: rgb(238, 9, 116);
+    font-weight: 700;
+}
