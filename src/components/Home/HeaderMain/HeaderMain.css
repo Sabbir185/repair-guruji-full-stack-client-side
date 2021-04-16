@@ -24,3 +24,15 @@
     color: rgb(238, 9, 116);
     font-weight: 700;
 }
+
+.welcome:hover{
+    color: rgb(7, 161, 20);
+    font-weight: 700;
+    color: dimgray;
+}
+.title:hover{
+    color: rgb(238, 9, 116);
+    font-weight: 700;
+    color: dimgray;
+
+}

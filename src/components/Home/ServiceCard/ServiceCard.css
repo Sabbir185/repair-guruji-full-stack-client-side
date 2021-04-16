@@ -1,0 +1,16 @@
+.img-style{
+    border-right: 2px solid rgb(238, 9, 116);
+}
+
+.card-container{
+    /* border-bottom: 2px solid cyan; */
+}
+
+@media only screen and (max-width: 768px) {
+    .img-style{
+        border: none;
+    }
+    .img-style img{
+        width: 75%;
+    }
+  }
