@@ -28,15 +28,8 @@ const reviewsInfo = [
         occupation: 'student',
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
         rating: 3
-    },
-    {
-        id: 4,
-        image: three,
-        name: "Mahbub",
-        occupation: 'student',
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        rating: 1
-    },
+    }
+
 ]
 
 const Reviews = () => {

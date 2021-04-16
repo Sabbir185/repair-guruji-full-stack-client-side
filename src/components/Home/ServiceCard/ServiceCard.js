@@ -3,7 +3,7 @@ import './ServiceCard.css'
 
 const ServiceCard = (props) => {
     const {title, price, image, description} = props.service;
-    console.log(image)
+
 
     return (
         <div>

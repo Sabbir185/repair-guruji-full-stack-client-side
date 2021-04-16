@@ -8,6 +8,11 @@
 
 .sub-container{
     background-color: rgb(219, 216, 216);
+    background-image: url('../../../images/pc.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: right;
+
     margin-top: 6%;
     box-shadow: 10px 10px 40px lightgray;
     padding: 5% 20%;
@@ -36,3 +41,9 @@
     color: dimgray;
 
 }
+
+@media only screen and (max-width: 1000px) {
+    .sub-container{
+        background-image: none;
+    }
+  }
