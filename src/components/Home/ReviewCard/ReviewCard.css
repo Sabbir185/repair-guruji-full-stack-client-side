@@ -1,0 +1,10 @@
+.review-img img{
+    width: 50px;
+    border-radius: 40%;
+    /* display: block;
+    margin: auto; */
+}
+
+.goldenray{
+    color: goldenrod;
+}
