@@ -7,7 +7,7 @@ import project4 from '../../../images/pp.jpg'
 
 const ProjectShow = () => {
     return (
-        <section className="container pt-4">
+        <section className="container pt-4 pb-5">
             <h3 className="text-center mt-5 pb-4">Latest Project</h3>
             <h1 className="text-center mb-5 mt-3">Customer satisfaction is our main Goal !</h1>
             <div className="pt-5">
