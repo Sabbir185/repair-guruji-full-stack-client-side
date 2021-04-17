@@ -13,7 +13,6 @@ const Dashboard = () => {
                     <Sidebar></Sidebar>
                 </div>
                 <div className="col  ml-5">
-                    <h4 className="pb-3">Book You Service</h4>
                     <Book></Book>
                 </div>
             </div>

@@ -2,8 +2,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
 import Login from './components/Login/Login/Login';
@@ -15,6 +14,7 @@ import OrderList from './components/Admin/OrderList/OrderList';
 import AddService from './components/Admin/AddService/AddService';
 import MakeAdmin from './components/Admin/MakeAdmin/MakeAdmin';
 import ManageService from './components/Admin/ManageService/ManageService';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 
 
 export const UserContext = createContext();
@@ -42,6 +42,9 @@ function App() {
             <Dashboard />
           </Route>
 
+          <Route path="/book/:id">
+            <Dashboard />
+          </Route>
           <Route path="/book">
             <Dashboard />
           </Route>
