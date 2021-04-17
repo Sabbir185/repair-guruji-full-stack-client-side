@@ -1,4 +1,7 @@
 .preview-img{
-    padding: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
+}
+
+.bx-shadow{
+    box-shadow: 5px 5px 40px lightgray;
 }

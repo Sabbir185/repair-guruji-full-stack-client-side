@@ -15,10 +15,13 @@ const Services = () => {
     return (
         <section className="container pt-5">
             <h3 className="mb-3 pb-3 text-center">Services</h3>
-            <h1 className="mb-5 pb-5 text-center">Quality is our first choice</h1>
-            {
-                serviceInfo.map(service => <ServiceCard service={service} key={service._id}> </ServiceCard>)
-            }
+            <h1 className="mb-5 pb-4 text-center">Quality is our first choice</h1>
+            
+            <div className="row d-flex justify-content-center">
+                {
+                    serviceInfo.map(service => <ServiceCard service={service} key={service._id}> </ServiceCard>)
+                }
+            </div>
         </section>
     );
 };

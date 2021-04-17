@@ -7,43 +7,43 @@ import project4 from '../../../images/pp.jpg'
 
 const ProjectShow = () => {
     return (
-        <section className="container">
-            <h3 className="text-center mt-5">Latest Project</h3>
+        <section className="container pt-4">
+            <h3 className="text-center mt-5 pb-4">Latest Project</h3>
             <h1 className="text-center mb-5 mt-3">Customer satisfaction is our main Goal !</h1>
-            <div className="row row-cols-1 row-cols-md-2 pt-3 pb-5">
-                <div className="col mb-4">
-                    <div className="card">
-                        <img src={project1} className="card-img-top preview-img img-fluid" alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">Desktop repair complete</h5>
-                            <p className="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit labore ex mollitia doloremque suscipit veniam in aspernatur, ipsa fugit.</p>
+            <div className="pt-5">
+                <div className="row">
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-2 bx-shadow">
+                        <div>
+                            <img src={project1} alt="" className="img-fluid w-100 pb-3 rounded"/>
+                        </div>
+                        <div className="row">
+                            <div className="col">
+                                <img src={project2} alt="" className="img-fluid w-100 rounded"/>
+                            </div>
+                            <div className="col">
+                                <img src={project3} alt="" className="img-fluid w-100 rounded"/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card">
-                        <img src={project2} className="card-img-top preview-img img-fluid" alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">Brand New Desktop setup</h5>
-                            <p className="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis nesciunt possimus libero maxime vero laborum nulla quas expedita suscipit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card">
-                        <img src={project3} className="card-img-top preview-img img-fluid" alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">Ipad repair</h5>
-                            <p className="card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tempore quaerat repellendus exercitationem rem, officiis quae dolorem molestias. Distinctio, dolor!</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col mb-4">
-                    <div className="card">
-                        <img src={project4} className="card-img-top preview-img img-fluid" alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">Ipad display replacement</h5>
-                            <p className="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id corrupti veritatis sapiente quasi eaque odio sunt iste excepturi tenetur suscipit.</p>
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-4">
+                        <h3 className="mt-4">Brand New Desktop Setup</h3>
+                        <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id corrupti veritatis sapiente quasi eaque odio sunt iste excepturi tenetur suscipit.</p>
+
+                        <h3 className="mt-5">Ipad Display and wifi replacement</h3>
+                        <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id corrupti veritatis sapiente quasi eaque odio sunt iste excepturi tenetur suscipit.</p>
+
+                        <h3 className="mt-5">Dell Laptop Motherboard repair</h3>
+                        <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id corrupti veritatis sapiente quasi eaque odio sunt iste excepturi tenetur suscipit.</p>
+
+                        <div className="row mt-5">
+                            <div className="col">
+                                <h6>Digital Carnival 2021</h6>
+                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nobis!</small>
+                            </div>
+                            <div className="col">
+                                <h6>SAMSUNG Fair 2020</h6>
+                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nobis!</small>
+                            </div>
                         </div>
                     </div>
                 </div>
