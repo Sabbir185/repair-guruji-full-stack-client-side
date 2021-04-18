@@ -1,11 +1,3 @@
-/* .img-style{
-    border-right: 2px solid rgb(238, 9, 116);
-    padding-right: 20px;
-}
-.img-style img{
-    margin-right: 20px;
-    border-radius: 20px;
-} */
 
 .card-img{
     height: 170px;
@@ -13,12 +5,4 @@
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-    /* .img-style{
-        border: none;
-    }
-    .img-style img{
-        width: 75%;
-    } */
-  }
 

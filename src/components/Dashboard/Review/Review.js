@@ -21,6 +21,7 @@ const Review = () => {
             occupation: data.Occupation,
             description: data.description,
             email: loggedInUser.email,
+            name: loggedInUser.name,
             image: loggedInUser.photoURL
         };
         console.log(newData)

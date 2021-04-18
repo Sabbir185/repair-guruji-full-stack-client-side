@@ -25,7 +25,7 @@ const ServiceCard = (props) => {
                                 <p className="text-secondary text-justify"><small>{description}</small></p>
                             </Card.Text>
                             <div className="row justify-content-around align-items-center">
-                                <h6 className=""><em>Price : ${price}</em></h6>
+                                <h6 className="text-info"><em>Price : ${price}</em></h6>
                                 <Button variant="success" onClick={() => handleBook(_id)} > Book A Service </Button>
                             </div>
                         </Card.Body>
