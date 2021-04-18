@@ -6,6 +6,7 @@ import HeaderMain from '../HeaderMain/HeaderMain';
 import ProjectShow from '../ProjectShow/ProjectShow';
 import Reviews from '../Reviews/Reviews';
 import Services from '../Services/Services';
+import Specialist from '../Specialist/Specialist';
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <Services></Services>
             <Reviews></Reviews>
             <ProjectShow></ProjectShow>
+            <Specialist></Specialist>
             <Footer></Footer>
         </main>
     );
