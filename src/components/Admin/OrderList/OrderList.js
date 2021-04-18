@@ -41,6 +41,7 @@ const OrderList = () => {
                                         <td>{booking.title}</td>
                                         <td>{booking._id}</td>
                                         <td>
+                                            {/* use state */}
                                             <select name="status" id="">
                                                 <option value="done" className="text-success font-weight-bold">Done</option>
                                                 <option value="pending" className="text-danger font-weight-bold">Pending</option>
