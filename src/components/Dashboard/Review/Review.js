@@ -20,7 +20,8 @@ const Review = () => {
             rating: rating,
             occupation: data.Occupation,
             description: data.description,
-            email: loggedInUser.email
+            email: loggedInUser.email,
+            image: loggedInUser.photoURL
         };
         console.log(newData)
 

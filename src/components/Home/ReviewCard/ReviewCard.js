@@ -8,7 +8,6 @@ import './ReviewCard.css'
 const ReviewCard = (props) => {
     const {image, name, occupation, description, rating} = props.review;
 
-    
     return (
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-5">
             <div className="row">
