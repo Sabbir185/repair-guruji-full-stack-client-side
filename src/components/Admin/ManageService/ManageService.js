@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 import Sidebar from '../../Dashboard/Sidebar/Sidebar';
+import LinearIndeterminate from '../../Home/Spinner/LinearIndeterminate';
 import HeaderNavbar from '../../Shared/HeaderNavbar/HeaderNavbar';
 import './ManageService.css'
 
@@ -38,14 +39,17 @@ const ManageService = () => {
                 </div>
                 <div className="col  ml-5">
                     <h4 className="pb-3">Repair Guruji's All Service</h4>
+                    {
+                        allService.length == 0 && <LinearIndeterminate></LinearIndeterminate>
+                    }
                     <table>
                         <thead>
-                            <tr>
+                            {allService.length != 0 && <tr>
                                 <th>Service Type</th>
                                 <th>ID</th>
                                 <th>Price</th>
                                 <th>Status</th>
-                            </tr>
+                            </tr>}
                         </thead>
                         <tbody>
                             {

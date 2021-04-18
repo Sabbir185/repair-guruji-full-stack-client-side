@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Flip from 'react-reveal/Flip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar  } from '@fortawesome/free-solid-svg-icons';
 import { faStar as farFaStar } from '@fortawesome/free-regular-svg-icons'
@@ -10,6 +11,7 @@ const ReviewCard = (props) => {
 
     return (
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-5">
+            <Flip left>
             <div className="row">
                 <div className="col-3 review-img">
                     <img src={image} alt=""/>
@@ -75,6 +77,7 @@ const ReviewCard = (props) => {
                     </div>
                 }
             </div>
+            </Flip>
         </div>
     );
 };

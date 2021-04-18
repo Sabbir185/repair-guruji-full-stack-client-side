@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import HeaderNavbar from '../../Shared/HeaderNavbar/HeaderNavbar';
 import Sidebar from '../../Dashboard/Sidebar/Sidebar';
 import './OrderList.css'
+import LinearIndeterminate from '../../Home/Spinner/LinearIndeterminate';
+import CircularIndeterminate from '../../Home/Spinner/CircularIndeterminate';
 
 
 const OrderList = () => {
@@ -34,6 +36,9 @@ const OrderList = () => {
                             </tr>
                         </thead>
                         <tbody>
+                            {
+                                allBookList.length == 0 && <CircularIndeterminate></CircularIndeterminate>
+                            }
                             {
                                 allBookList.map(booking =>
                                     <tr>

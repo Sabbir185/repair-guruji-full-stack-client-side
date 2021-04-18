@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import { UserContext } from '../../../App';
 import PaymentStrip from '../../PaymentStrip/PaymentStrip';
 import CheckoutForm from '../../PaymentStrip/CheckoutForm';
+import CircularIndeterminate from '../../Home/Spinner/CircularIndeterminate';
+import LinearIndeterminate from '../../Home/Spinner/LinearIndeterminate';
 
 const Book = () => {
     const { id } = useParams();
@@ -38,6 +40,9 @@ const Book = () => {
                     <h4 className="pb-3">Book Your Service</h4>
                     <small className="text-secondary">User Name : </small>
                     <input type="text" defaultValue={loggedInUser.name} className="form-control mb-2" />
+                    {
+                        booking.length == 0 && <LinearIndeterminate></LinearIndeterminate>
+                    }
                     {
                         id
                         ?

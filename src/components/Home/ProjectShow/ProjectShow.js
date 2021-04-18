@@ -6,10 +6,11 @@ import project3 from '../../../images/project (3).jpg'
 import project4 from '../../../images/pp.jpg'
 
 const ProjectShow = () => {
+    
     return (
         <section className="container pt-4 pb-5">
             <h3 className="text-center mt-5 pb-4">Latest Project</h3>
-            <h1 className="text-center mb-5 mt-3">Customer satisfaction is our main Goal !</h1>
+            <h1 className="text-center mb-5 mt-3 txt-bold">Customer satisfaction is our main Goal !</h1>
             <div className="pt-5">
                 <div className="row">
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-2 bx-shadow">

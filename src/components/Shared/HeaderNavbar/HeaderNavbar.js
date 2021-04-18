@@ -18,7 +18,7 @@ const HeaderNavbar = () => {
                     <Nav className="ml-auto link-style">
                         <Link to='/' className='nav-link mr-3'>Home</Link>
                         <Link to='/dashboard' className='nav-link mr-3'>Dashboard</Link>
-                        <Link to='/About Us' className='nav-link mr-3'>About Us</Link>
+                        <Link to='/about' className='nav-link mr-3'>About Us</Link>
                         {   
                             loggedInUser.email 
                             ?

@@ -15,6 +15,7 @@ import AddService from './components/Admin/AddService/AddService';
 import MakeAdmin from './components/Admin/MakeAdmin/MakeAdmin';
 import ManageService from './components/Admin/ManageService/ManageService';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import About from './components/About/About';
 
 
 export const UserContext = createContext();
@@ -36,6 +37,10 @@ function App() {
 
           <Route path="/login">
             <Login />
+          </Route>
+
+          <Route path="/about">
+            <About />
           </Route>
 
           <PrivateRoute path="/dashboard">
