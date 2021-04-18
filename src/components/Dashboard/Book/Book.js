@@ -12,6 +12,7 @@ const Book = () => {
 
     const [booking, setBooking] = useState([]);
     const [toggle, setToggle] = useState(false);
+    const [orderData, setOrderData] = useState({});
 
     useEffect(() => {
         fetch('http://localhost:5055/getServices')
@@ -23,7 +24,7 @@ const Book = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
-        console.log(data)
+        setOrderData(data);
         setToggle(true);
     };
 
@@ -68,7 +69,7 @@ const Book = () => {
                         {
                             toggle && <div>
                                 <h3 className="mb-5 text-secondary">Pay with stripe</h3>
-                                <PaymentStrip></PaymentStrip>
+                                <PaymentStrip orderData={orderData}></PaymentStrip>
                             </div>
                         }
                     </div>

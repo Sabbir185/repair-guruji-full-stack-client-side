@@ -5,10 +5,12 @@ import CheckoutForm from './CheckoutForm';
 
 const stripePromise = loadStripe('pk_test_51IeLQQJvn90Urdz7TTW8LBbHX1k1LUFWgveadGfsJKGdiI95E1m6DKTJW9NjGgSM58J5mtzhq3FbvTs9PzLFI0nk00j42bLZfM');
 
-const PaymentStrip = () => {
+const PaymentStrip = (props) => {
+    const orderInfo = props.orderData;
+
     return (
         <Elements stripe={stripePromise}>
-            <CheckoutForm></CheckoutForm>
+            <CheckoutForm orderData={orderInfo}></CheckoutForm>
         </Elements>
     );
 };
