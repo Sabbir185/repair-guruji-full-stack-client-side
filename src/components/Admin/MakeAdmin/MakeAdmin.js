@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import HeaderNavbar from '../../Shared/HeaderNavbar/HeaderNavbar';
 import Sidebar from '../../Dashboard/Sidebar/Sidebar';
 import './MakeAdmin.css'
+import { useHistory } from 'react-router';
 
 const MakeAdmin = () => {
+    const history = useHistory()
     const [email, setEmail] = useState('');
 
     const handleEmail = (e) =>{
@@ -19,6 +21,7 @@ const MakeAdmin = () => {
         .then(res =>{
             if(res){
                 alert("Admin added Successfully !")
+                history.push('/addService')
             }
         })
 
