@@ -9,7 +9,7 @@ const BookList = () => {
     const [bookList, setBookList] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5055/getBooking?email=${loggedInUser.email}`)
+        fetch(`https://sabbir185-repair-guruji.herokuapp.com/getBooking?email=${loggedInUser.email}`)
             .then(res => res.json())
             .then(data => setBookList(data))
     }, []);
@@ -47,7 +47,7 @@ const BookList = () => {
                                             <td>{book.title}</td>
                                             <td>{book.email}</td>
                                             <td>{book.paymentId}</td>
-                                            <td>Done</td>
+                                            <td className="bg-success  text-light font-weight-bold rounded">Done</td>
                                         </tr>
                                     )
                                 }

@@ -11,14 +11,14 @@ const ManageService = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch(`http://localhost:5055/getServices`)
+        fetch(`https://sabbir185-repair-guruji.herokuapp.com/getServices`)
             .then(res => res.json())
             .then(data => setAllService(data))
     }, []);
 
 
     const handleStatus = (_id) =>{
-        fetch(`http://localhost:5055/serviceDelete?id=${_id}`)
+        fetch(`https://sabbir185-repair-guruji.herokuapp.com/serviceDelete?id=${_id}`)
         .then(res => {
             if(res){
                 alert("Item has been deleted !");

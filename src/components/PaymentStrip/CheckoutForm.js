@@ -54,7 +54,7 @@ const CheckoutForm = (props) => {
   const handleData = (dataPayment) => {
      console.log(dataPayment)
 
-     fetch("http://localhost:5055/addBook",{
+     fetch("https://sabbir185-repair-guruji.herokuapp.com/addBook",{
        method:"POST",
        headers: {"content-type":"application/json"},
        body: JSON.stringify(dataPayment)

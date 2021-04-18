@@ -8,7 +8,7 @@ const OrderList = () => {
     const [allBookList, setAllBookList] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5055/getAllBookingList`)
+        fetch(`https://sabbir185-repair-guruji.herokuapp.com/getAllBookingList`)
             .then(res => res.json())
             .then(data => setAllBookList(data))
     }, []);

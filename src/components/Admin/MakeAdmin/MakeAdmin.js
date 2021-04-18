@@ -13,7 +13,7 @@ const MakeAdmin = () => {
     }
 
     const HandleForm = (e) => {
-        fetch("http://localhost:5055/addAdmin",{
+        fetch("https://sabbir185-repair-guruji.herokuapp.com/addAdmin",{
             method: 'POST',
             headers: {"content-type":"application/json"},
             body: JSON.stringify({email})

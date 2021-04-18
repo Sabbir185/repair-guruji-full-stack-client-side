@@ -25,7 +25,7 @@ const Review = () => {
         };
         console.log(newData)
 
-        fetch("http://localhost:5055/addReview",{
+        fetch("https://sabbir185-repair-guruji.herokuapp.com/addReview",{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(newData)

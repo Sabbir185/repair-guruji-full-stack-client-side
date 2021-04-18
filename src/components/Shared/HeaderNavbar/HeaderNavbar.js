@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../../App';
 import logo from '../../../images/logo1.png';
 import './HeaderNavbar.css'
 
 
 const HeaderNavbar = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
     return (
         <div className="container">
             <Navbar collapseOnSelect expand="lg" bg="" variant="light">
@@ -16,7 +19,13 @@ const HeaderNavbar = () => {
                         <Link to='/' className='nav-link mr-3'>Home</Link>
                         <Link to='/dashboard' className='nav-link mr-3'>Dashboard</Link>
                         <Link to='/About Us' className='nav-link mr-3'>About Us</Link>
-                        <Link to='/login' className='nav-link mr-3'>Login</Link>
+                        {   
+                            loggedInUser.email 
+                            ?
+                            <Link to="/" className='nav-link mr-3'>{loggedInUser.name}</Link>
+                            :
+                            <Link to='/login' className='nav-link mr-3'>Login</Link>
+                        }
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

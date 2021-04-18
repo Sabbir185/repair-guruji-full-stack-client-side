@@ -18,7 +18,7 @@ const AddService = () => {
         formData.append('price', data.price );
         formData.append('description', data.describe );
 
-        fetch('http://localhost:5055/addService', {
+        fetch('https://sabbir185-repair-guruji.herokuapp.com/addService', {
             method: 'POST',
             body: formData
         })

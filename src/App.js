@@ -38,16 +38,17 @@ function App() {
             <Login />
           </Route>
 
-          <Route path="/dashboard">
+          <PrivateRoute path="/dashboard">
             <Dashboard />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/book/:id">
+          <PrivateRoute path="/book/:id">
             <Dashboard />
-          </Route>
-          <Route path="/book">
+          </PrivateRoute>
+          
+          <PrivateRoute path="/book">
             <Dashboard />
-          </Route>
+          </PrivateRoute>
 
           <Route path="/bookList">
             <BookList />

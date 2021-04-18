@@ -15,7 +15,7 @@ const Book = () => {
     const [orderData, setOrderData] = useState({});
 
     useEffect(() => {
-        fetch('http://localhost:5055/getServices')
+        fetch('https://sabbir185-repair-guruji.herokuapp.com/getServices')
             .then(res => res.json())
             .then(data => setBooking(data))
     }, []);
