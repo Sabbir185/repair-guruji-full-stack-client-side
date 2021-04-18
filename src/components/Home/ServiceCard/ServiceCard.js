@@ -18,7 +18,9 @@ const ServiceCard = (props) => {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <Pulse>
                     <Card style={{ width: '18rem' }} className="mt-4 shadow bg-white rounded">
-                        <Card.Img variant="top" src={`data:image/jpeg;base64,${image.img}`} className="img-fluid card-img" />
+                        <div className="img-wrapper">
+                            <Card.Img variant="top" src={`data:image/jpeg;base64,${image.img}`} className="img-fluid card-img hover-zoom" />
+                        </div>
                         <Card.Body>
                             <Card.Title>{title}</Card.Title>
                             <Card.Text>
