@@ -5,14 +5,14 @@ import { useHistory } from 'react-router';
 
 const CheckoutForm = (props) => {
   const {email, title, price} = props.orderData;
-  // console.log(email, title, price)
+  
+  const [payError, setPayError] = useState(null);
+  const [paySuccess, setPaySuccess] = useState(null);
 
   const stripe = useStripe();
   const elements = useElements();
   const history = useHistory();
 
-  const [payError, setPayError] = useState(null);
-  const [paySuccess, setPaySuccess] = useState(null);
 
   const handleSubmit = async (event) => {
     // Block native form submission.
@@ -43,27 +43,47 @@ const CheckoutForm = (props) => {
     } else {
       // console.log('[PaymentMethod]', paymentMethod);
       // console.log(paymentMethod.id);
+      const id = paymentMethod.id;
       setPaySuccess(paymentMethod.id);
+      handleData({email, title, price, id})
       setPayError(null);
     }
   };
+
+
+  const handleData = (dataPayment) => {
+     console.log(dataPayment)
+
+     fetch("http://localhost:5055/addBook",{
+       method:"POST",
+       headers: {"content-type":"application/json"},
+       body: JSON.stringify(dataPayment)
+     })
+     .then(res => {
+      //  console.log(res)
+      //  if(res){
+      //    alert("Payment Success !")
+      //  }
+     })
+    
+  }
 
   return (
     <form onSubmit={handleSubmit}>
       <CardElement />
       <button type="submit" disabled={!stripe} className="btn btn-success mt-4">
-        Pay
+        Pay Now
       </button>
       <br/>
       {
         payError && <h1 className="text-danger my-4">{payError}</h1>
         ||
         paySuccess && <div>
-          <h1 className="text-success my-4">Booking Successful ! Your payment ID :  {paySuccess}</h1>
+          <h4 className="text-success my-4">Booking Successful ! Your payment ID :  {paySuccess}</h4>
           {
             paySuccess && setTimeout(() => {
               history.push("/")
-            }, 5000)
+            }, 10000)
           }
         </div>
       }
